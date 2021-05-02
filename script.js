@@ -29,6 +29,9 @@ const app = new Vue({
             }
 
         },
-
+        
+        imgGo: function (ImgStart) {
+            this.ImgZero = ImgStart
+        }
     },
 });
