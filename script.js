@@ -11,4 +11,24 @@ const app = new Vue({
             { url: 'img/harley3.jpeg' },
         ],
     },
+    methods: {
+
+        arrowRight: function () {
+            this.ImgZero++
+
+            if (this.ImgZero == this.imgHarley.length) {
+                this.ImgZero = 0
+            }
+        },
+
+        arrowLeft: function () {
+            this.ImgZero += -1
+
+            if (this.ImgZero < 0) {
+                this.ImgZero = (this.imgHarley.length - 1);
+            }
+
+        },
+
+    },
 });

@@ -12,28 +12,33 @@
     </head>
 
     <body>
+
         <main id="app">
 
             <div class="wrapper">
 
                 <div class="arrow">
-                    <i class="fa fa-chevron-left" ></i>
+                    <i class="fa fa-chevron-left" @click="arrowLeft"></i>
                 </div>
 
                 <div class="centerBlock">
-                    <div class="centerBlockImg">
+                    <div class="imgWrapper">
                         <img :src="imgHarley[ImgZero].url">
+                    </div>
+
+                    <div class="bottomWrapper">
+                       
                     </div>
                 </div>
 
                 <div class="arrow">
-                    <i class="fa fa-chevron-right" ></i>
+                    <i class="fa fa-chevron-right" @click="arrowRight"></i>
                 </div>
 
-                <div class="bottomWrapper">
-                </div>
             </div>
+            
         </main>
+
         <script src="script.js"></script>
     </body>
 
