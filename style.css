@@ -10,6 +10,10 @@
     height: 70vh;
 }
 
+.wrapper:focus {
+    outline: none;
+}
+
 .centerBlock{
     position: relative;
     width: 100%;
